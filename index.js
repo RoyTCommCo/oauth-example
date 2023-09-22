@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 // set up environment variables
 // if you have not created a .env file by following the README instructions this will not work
-const config = require('./.config.js');
+const config = require('./.config');
 
 const clientId = config.clientId.trim();
 const clientSecret = config.clientSecret.trim();
